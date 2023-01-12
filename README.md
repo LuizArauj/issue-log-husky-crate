@@ -1,0 +1,1 @@
+# issue-log-husky-crate
