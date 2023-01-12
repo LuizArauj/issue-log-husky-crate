@@ -1,0 +1,16 @@
+[11:29:36] [pool-2-thread-96/ERROR] [Sponge]: The Scheduler tried to run the task huskycrates-A-614 owned by Plugin{id=huskycrates, name=HuskyCrates, version=2.0.0RC3, description=A Crate Plugin for Sponge!, source=./mods/HuskyCrates.jar}, but an error occured.
+java.lang.IllegalStateException: null
+        at org.spongepowered.api.world.Location.getExtent(Location.java:172) ~[Location.class:1.12.2-2838-7.4.7]
+        at org.spongepowered.api.world.Location.hashCode(Location.java:918) ~[Location.class:1.12.2-2838-7.4.7]
+        at java.util.HashMap.hash(HashMap.java:340) ~[?:1.8.0_312]
+        at java.util.HashMap.containsKey(HashMap.java:597) ~[?:1.8.0_312]
+        at com.codehusky.huskycrates.Registry.isPhysicalCrate(Registry.java:160) ~[Registry.class:?]
+        at com.codehusky.huskycrates.Registry.getPhysicalCrate(Registry.java:69) ~[Registry.class:?]
+        at com.codehusky.huskycrates.HuskyCrates$1.accept(HuskyCrates.java:339) ~[HuskyCrates$1.class:?]
+        at com.codehusky.huskycrates.HuskyCrates$1.accept(HuskyCrates.java:332) ~[HuskyCrates$1.class:?]
+        at org.spongepowered.common.scheduler.SchedulerBase.lambda$startTask$0(SchedulerBase.java:197) ~[SchedulerBase.class:1.12.2-2838-7.4.7]
+        at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_312]
+        at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_312]
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_312]
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_312]
+        at java.lang.Thread.run(Thread.java:748) [?:1.8.0_312]
